@@ -22,4 +22,4 @@ pnpm-debug.log*
 .astro/
 
 # markdown
-src/pages/*.md
+src/pages/posts/*.md

@@ -1,9 +1,9 @@
 ---
 import BlogPost from '../components/BlogPost.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-const allPosts = (Object.values(import.meta.glob('../pages/*.md', { eager: true }))).slice(
+const allPosts = (Object.values(import.meta.glob('../pages/posts/*.md', { eager: true }))).slice(
   0,
-  12
+  4
 );
 const pageTitle = 'Visual C++ Development';
 ---
@@ -16,4 +16,5 @@ const pageTitle = 'Visual C++ Development';
       ))
     }
   </ul>
+  <a href="/com-vc/page/2">Next</a>
 </BaseLayout>
